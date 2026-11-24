@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
+using RevoCastApp.Domain.Base;
+
+namespace RevoCastApp.Domain.Entities
+{
+    public class EquipeEpisodio : BaseEntity
+    {
+        public Episodio episodio { get; set; }
+        public Membro membro { get; set; }
+        public string funcao { get; set; }
+    }
+}

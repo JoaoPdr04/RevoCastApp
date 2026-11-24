@@ -1,0 +1,16 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Design;
+
+namespace RevoCastApp.Repository.Context
+{
+    public class MyDBContextFactory : IDesignTimeDbContextFactory<MyDBContext>
+    {
+        public MyDBContext CreateDbContext(string[] args)
+        {
+            var optionsBuilder = new DbContextOptionsBuilder<MyDBContext>();
+            optionsBuilder.UseNpgsql("Host=localhost;Port=5432;Database=RevoCastDB;Username=postgres;Password=ifsp");
+
+            return new MyDBContext(optionsBuilder.Options);
+        }
+    }
+}

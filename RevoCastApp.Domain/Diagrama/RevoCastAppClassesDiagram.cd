@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="RevoCastApp.Domain.Entities.Episodio">
+    <Position X="8" Y="2.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAQAAABAQAAAAAACAQEAAAAAEAAAAAAAAAAAFAAAAAA=</HashCode>
+      <FileName>Entities\Episodio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.Corte">
+    <Position X="8" Y="5.5" Width="1.75" />
+    <AssociationLine Name="membro" Type="RevoCastApp.Domain.Entities.Membro" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8" Y="6.161" />
+        <Point X="7.625" Y="6.161" />
+        <Point X="7.625" Y="4" />
+        <Point X="7.083" Y="4" Type="JumpStart" />
+        <Point X="6.917" Y="4" Type="JumpEnd" />
+        <Point X="6.458" Y="4" Type="JumpStart" />
+        <Point X="6.292" Y="4" Type="JumpEnd" />
+        <Point X="4.208" Y="4" Type="JumpStart" />
+        <Point X="4.042" Y="4" Type="JumpEnd" />
+        <Point X="3.5" Y="4" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAEBAAAAA=</HashCode>
+      <FileName>Entities\Corte.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="episodio" />
+      <Property Name="membro" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.Membro">
+    <Position X="1.75" Y="2.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAEAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Membro.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.Convidado">
+    <Position X="11.25" Y="2.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAgAAAAAAAAAEAAAAAAAAAAAAAAACA=</HashCode>
+      <FileName>Entities\Convidado.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.Tarefa">
+    <Position X="4.5" Y="5.5" Width="1.5" />
+    <AssociationLine Name="etapa" Type="RevoCastApp.Domain.Entities.EtapaProducao" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="6.5" />
+        <Point X="3.25" Y="6.5" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="episodio" Type="RevoCastApp.Domain.Entities.Episodio" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="6" Y="6.405" />
+        <Point X="6.375" Y="6.405" />
+        <Point X="6.375" Y="3.841" />
+        <Point X="6.917" Y="3.841" Type="JumpStart" />
+        <Point X="7.083" Y="3.841" Type="JumpEnd" />
+        <Point X="8" Y="3.841" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="membro" Type="RevoCastApp.Domain.Entities.Membro" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="4.5" Y="6.405" />
+        <Point X="4.125" Y="6.405" />
+        <Point X="4.125" Y="3.5" />
+        <Point X="3.5" Y="3.5" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAQAAAAEACCAAAAACAAAAABAAAAA=</HashCode>
+      <FileName>Entities\Tarefa.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="etapa" />
+      <Property Name="episodio" />
+      <Property Name="membro" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Base.BaseEntity" Collapsed="true">
+    <Position X="6.25" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Base\BaseEntity.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.ParticipacaoConvidado">
+    <Position X="14.5" Y="2.5" Width="2" />
+    <AssociationLine Name="episodio" Type="RevoCastApp.Domain.Entities.Episodio" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="15.5" Y="4.117" />
+        <Point X="15.5" Y="4.53" />
+        <Point X="14.333" Y="4.53" Type="JumpStart" />
+        <Point X="14.167" Y="4.53" Type="JumpEnd" />
+        <Point X="11.083" Y="4.53" Type="JumpStart" />
+        <Point X="10.917" Y="4.53" Type="JumpEnd" />
+        <Point X="10.549" Y="4.53" />
+        <Point X="10.549" Y="3.289" />
+        <Point X="10" Y="3.289" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAQAAAAACAAAAAAAAAQAAAABAA=</HashCode>
+      <FileName>Entities\ParticipacaoConvidado.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="episodio" />
+      <Property Name="convidado" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.EtapaProducao">
+    <Position X="1.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAGAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\EtapaProducao.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.Equipamento">
+    <Position X="11.25" Y="5.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AQQAAAAAQAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Equipamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.UsoEquipamento">
+    <Position X="14.5" Y="5.5" Width="1.75" />
+    <AssociationLine Name="episodio" Type="RevoCastApp.Domain.Entities.Episodio" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.901" Y="5.5" />
+        <Point X="14.901" Y="4.81" />
+        <Point X="11.083" Y="4.81" Type="JumpStart" />
+        <Point X="10.917" Y="4.81" Type="JumpEnd" />
+        <Point X="10.194" Y="4.81" />
+        <Point X="10.194" Y="3.763" />
+        <Point X="10" Y="3.763" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAACAABAAAAAACAAAAAAA=</HashCode>
+      <FileName>Entities\UsoEquipamento.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="episodio" />
+      <Property Name="equipamento" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="RevoCastApp.Domain.Entities.EquipeEpisodio">
+    <Position X="4.5" Y="2.5" Width="1.5" />
+    <AssociationLine Name="membro" Type="RevoCastApp.Domain.Entities.Membro" FixedFromPoint="true">
+      <Path>
+        <Point X="4.5" Y="3.125" />
+        <Point X="3.5" Y="3.125" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Entities\EquipeEpisodio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="episodio" />
+      <Property Name="membro" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
