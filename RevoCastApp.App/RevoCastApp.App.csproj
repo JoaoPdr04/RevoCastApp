@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Base\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RevoCastApp.Domain\RevoCastApp.Domain.csproj" />
+    <ProjectReference Include="..\RevoCastApp.Repository\RevoCastApp.Repository.csproj" />
+    <ProjectReference Include="..\RevoCastApp.Service\RevoCastApp.Service.csproj" />
+  </ItemGroup>
+
+</Project>

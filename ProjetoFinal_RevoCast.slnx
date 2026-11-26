@@ -1,5 +1,7 @@
 <Solution>
+  <Project Path="RevoCastApp.App/RevoCastApp.App.csproj" Id="179c0c2b-a715-4b40-96de-24b3965601a1" />
   <Project Path="RevoCastApp.Domain/RevoCastApp.Domain.csproj" />
   <Project Path="RevoCastApp.Repository/RevoCastApp.Repository.csproj" />
   <Project Path="RevoCastApp.Service/RevoCastApp.Service.csproj" Id="2c0c0c44-7133-4768-a8a6-2fda7f7100f9" />
+  <Project Path="RevoCastApp.Teste/RevoCastApp.Teste.csproj" Id="e1f106a0-05b1-4b40-afb2-b1709afa8aad" />
 </Solution>

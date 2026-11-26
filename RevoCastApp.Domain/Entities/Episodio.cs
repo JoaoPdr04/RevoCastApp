@@ -14,7 +14,7 @@ namespace RevoCastApp.Domain.Entities
         public DateTime data_gravacao { get; set; }
         public string status { get; set; }
 
-        public List<EquipeEpisodio> EquipeEpisodios { get; set; }
+        public List<EquipeEpisodio> EquipeEpisodios { get; set; } = new List<EquipeEpisodio>();
         public List<ParticipacaoConvidado> Participacoes { get; set; }
         public List<UsoEquipamento> UsoEquipamentos { get; set; }
     }
